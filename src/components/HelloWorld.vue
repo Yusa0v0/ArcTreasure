@@ -9,16 +9,8 @@
     </div>
     <div class="container">
       <div class="eight">
-        <!-- <h1 style="font-family: circular, 'segoe ui', sans-serif">
-          Lorem ipsum dolor
-        </h1> -->
-        <!-- Lorem ipsum dolor -->
-        <h1>Lorem ipsum dolor</h1>
-
-        <h3>
-          Lorem ipsum dolor sit amet aliquyam sea erat et consetetur quis aliquyam ut stet
-          et iusto eros ipsum.
-        </h3>
+        <h1 id="typed-title"></h1>
+        <h3 id="typed-content"></h3>
         <!-- <br> <div class="btn customize">
           <i class="ent-cog"> </i>
           Customize & Get Code
@@ -30,6 +22,7 @@
 </template>
 
 <script>
+import Typed from "typed.js";
 import * as THREE from "three";
 // import BIRDS from "vanta/src/vanta.birds";
 // import Fog from "vanta/src/vanta.fog";
@@ -62,6 +55,27 @@ export default {
       // 漂亮的紫色
       cloudShadowColor: 0x3640d4,
       speed: 1.1,
+    });
+
+    var typedTitle = {
+      strings: ["Lorem ipsum"],
+      typeSpeed: 200,
+      showCursor: false,
+    };
+    var typedContent = {
+      strings: [
+        "Lorem ipsum dolor sit amet ex sed magna. Eirmod sed ea magna aliquyam no labore sit accusam vulputate labore ipsum sea. Vero erat ipsum invidunt nonumy eirmod dolore dolor diam sadipscing nulla amet sadipscing soluta sadipscing laoreet. Autem lobortis accumsan amet enim. Clita ut kasd autem voluptua amet facilisis et ut minim sed stet. Et diam diam diam ipsum tempor ut accusam sed invidunt et dignissim lorem enim eros lobortis sed ut sea.",
+      ],
+      typeSpeed: 10,
+      // cursorChar: "-",
+      showCursor: false,
+    };
+    new Typed("#typed-title", typedTitle);
+    new Promise((resolve) => {
+      setTimeout(() => {
+        new Typed("#typed-content", typedContent);
+        resolve("操作完成");
+      }, 3500);
     });
   },
   beforeDestroy() {
