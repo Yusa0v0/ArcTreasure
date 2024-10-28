@@ -11,11 +11,6 @@
       <div class="eight">
         <h1 id="typed-title"></h1>
         <h3 id="typed-content"></h3>
-        <!-- <br> <div class="btn customize">
-          <i class="ent-cog"> </i>
-          Customize & Get Code
-        </div> -->
-        <!-- <div class="btn restart" style="display: none">Randomize!</div> -->
       </div>
     </div>
   </div>
@@ -119,7 +114,6 @@ export default {
   position: relative;
   z-index: 1;
   text-align: left;
-  // max-width: 1500px;
 }
 .top-left,
 .top-right,

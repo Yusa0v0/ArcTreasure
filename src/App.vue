@@ -1,11 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <Header />
+  <router-view></router-view>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
