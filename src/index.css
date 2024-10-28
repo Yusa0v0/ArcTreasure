@@ -1,5 +1,13 @@
 @tailwind base;
- 
+
 @tailwind components;
- 
+
 @tailwind utilities;
+
+
+/* 自定義類名,@apply裝飾符用於起別名 */
+@layer components {
+    .btn-danger {
+        @apply rounded-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600;
+    }
+}

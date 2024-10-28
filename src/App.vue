@@ -1,10 +1,10 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
-import Header from "./components/Header.vue";
+import TailWindCss from "./components/TailWindCss.vue";
 </script>
 
 <template>
-  <Header />
+  <TailWindCss />
   <router-view></router-view>
 </template>
 
