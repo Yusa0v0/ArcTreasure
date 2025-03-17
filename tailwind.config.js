@@ -24,6 +24,13 @@ export default {
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      backgroundImage: theme => ({
+        'mobile-image': "url('@/assets/mobile/bg.png')",
+        'tablet-image': "url('@/assets/desktop/bg.jpg')",
+        'desktop-image': "url('@/assets/desktop/bg.jpg')",
+        'large-desktop-image': "url('@/assets/desktop/bg.jpg')",
+      }),
+
       spacing: {
         '8xl': '96rem',
         '9xl': '128rem',
