@@ -6,8 +6,8 @@ const routes = [
         path: '/',
         component: () => import('@components/HelloWorld.vue')  // 首页组件
     }, {
-        path: '/about',
-        component: () => import('@components/Header.vue')  // 关于我们组件
+        path: '/cream',
+        component: () => import('@components/Cream.vue')  // 
     },{
         path: '/2',
         component: () => import('@components/Test.vue')  // 关于我们组件

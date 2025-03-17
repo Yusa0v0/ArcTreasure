@@ -4,7 +4,7 @@ import TailWindCss from "./components/TailWindCss.vue";
 </script>
 
 <template>
-  <TailWindCss />
+  <!-- <TailWindCss /> -->
   <router-view></router-view>
 </template>
 
